@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор расчетных листков</title>
+</head>
+<body>
+    <h2>Загрузите файл с сотрудниками</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="employee_file" accept=".xlsx">
+        <button type="submit">Загрузить</button>
+    </form>
+    
+    <h2>Скачать расчетные листки</h2>
+    <button onclick="window.location.href='/mnt/data/payroll_sheets.zip'">Скачать все расчетные листки</button>
+</body>
+</html>
